@@ -1,0 +1,6 @@
+const schema = {
+    required: [],
+    properties: {
+        
+    }
+}

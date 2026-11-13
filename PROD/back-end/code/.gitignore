@@ -1,0 +1,8 @@
+# dependencies
+/node_modules
+/.env
+/.env.development
+/.env.production
+/amstoolscargillcomcert.pem
+/amstoolscargillcomkey.pem
+/public/view
