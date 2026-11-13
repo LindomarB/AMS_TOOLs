@@ -1,0 +1,19 @@
+
+.Resizer {
+    height: 60%;
+    padding: 0 6px;
+    opacity: 0;
+    cursor: col-resize;
+    transition: opacity 0.1s ease-out;
+}
+
+.Resizer:hover  {
+    opacity: 1;
+}
+
+.Resizer span {
+    background-color: white;
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+}

@@ -1,0 +1,9 @@
+.AskQuestion {
+    min-width: 600px;
+    min-height: 500px;
+}
+
+.textArea {
+    flex-grow: 1;
+    min-height: 100px;
+}

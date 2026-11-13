@@ -1,0 +1,21 @@
+.Notification {
+    /* background-color: rgb(244, 244, 244); */
+    /* border-radius: var(--border-radius); */
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.new {
+    border-left: 0.25rem solid var(--color-blue);
+}
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.textNew {
+    display: flex;
+    align-items: center;
+}

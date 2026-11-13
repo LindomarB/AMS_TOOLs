@@ -1,0 +1,33 @@
+.ItemDetails {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 20px;
+}
+
+.header h2 {
+    font-weight: 600;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.headerRightContent {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.content {
+    padding: 0 20px;
+    margin-top: 6px;
+    height: 100%;
+    overflow: auto;
+}

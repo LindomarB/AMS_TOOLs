@@ -1,0 +1,12 @@
+.LanguageSelector {
+    padding: 10px;
+}
+
+.item {
+    color: #276ca8;
+    margin: 0 10px;
+}
+
+.underline {
+    background-color: #276ca8;
+}

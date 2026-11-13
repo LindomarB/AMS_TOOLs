@@ -1,0 +1,73 @@
+.Submenu {
+    position: relative;
+    background-color: #f4f4f4;
+    width: 0px;
+    height: 100%;
+    transition: all 0.4s ease-out;
+    overflow: hidden;
+}
+
+.Submenu.show {
+    transition: all 0.4s ease-out;
+}
+
+.itemsContainerWrapper {
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+
+.show .itemsContainerWrapper {
+    opacity: 1;
+}
+
+.itemsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 0;
+}
+
+.show {
+    width: 270px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.groupName {
+    color: #3c3c3c;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 30px;
+}
+
+.enter {
+    opacity: 0;
+}
+
+.enterActive {
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+}
+
+.enterDone {
+    opacity: 1;
+}
+
+.exit {
+    opacity: 1;
+}
+
+.exitActive {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.exitDone {
+    opacity: 0;
+}

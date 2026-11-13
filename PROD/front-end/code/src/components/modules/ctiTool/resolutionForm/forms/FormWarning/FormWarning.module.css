@@ -1,0 +1,15 @@
+.FormWarning {
+    margin-bottom: 0.5rem;
+}
+
+.FormWarning:last-of-type {
+    margin-bottom: 0;
+}
+
+.textButton {
+    display: inline-flex;
+}
+
+.textButton:hover {
+    font-weight: 500;
+}

@@ -1,0 +1,43 @@
+.button {
+    color: #FFFFFF;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
+}
+
+.popBox {
+    width: 300px;
+    /* z-index: 1000000 !important; */
+}
+
+
+.user {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.userInfo {
+    overflow: hidden;
+}
+
+.userInfo p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.userName {
+    margin-bottom: 0.25rem;
+    white-space: nowrap;
+}
+
+.awayMode {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 1rem;
+}

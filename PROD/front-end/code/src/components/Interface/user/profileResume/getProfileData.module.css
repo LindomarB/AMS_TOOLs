@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.userPhoto {
+    width: 3.5rem;
+    height: 3.5rem;
+}

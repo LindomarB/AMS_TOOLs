@@ -1,0 +1,27 @@
+.Select {
+    z-index: -10;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.option {
+    cursor: pointer;
+}
+
+.placeholder {
+    color: var(--color-grey);
+}
+
+.clearSelection {
+    color: var(--color-grey);
+}
+
+.picker {
+    position: absolute;
+    right: 0;
+    background-color: inherit;
+    pointer-events: none;
+    padding-right: 1rem;
+}

@@ -1,0 +1,13 @@
+.SelectUser {
+    min-width: 800px;
+    height: 800px;
+}
+
+.userResume {
+    flex-grow: 1;
+}
+
+.button {
+    margin-top: auto;
+    align-self: flex-end;
+}

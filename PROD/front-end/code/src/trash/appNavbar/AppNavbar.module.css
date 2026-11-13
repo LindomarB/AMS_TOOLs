@@ -1,0 +1,16 @@
+.AppNavbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    grid-column: navbar;
+    grid-row: navbar;
+    transform: translateX(-100%);
+    animation: enter 0.3s ease-out forwards;
+    z-index: 10000;
+}
+
+@keyframes enter {
+    to {
+        transform: translateX(0%);
+    }
+}

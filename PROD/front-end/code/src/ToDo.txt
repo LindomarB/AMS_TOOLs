@@ -1,0 +1,213 @@
+DONE
+
+    
+=============================================================================
+
+===================== Interface =======================
+General
+    Fazer o download de algumas informações do server, como roles, e salvar no appContext para diminuir o numero de fetchs da aplicação
+    Criptografar o password do lado do client ao enviar para o server
+    Criar uma favicon para o do AMS Tools
+    Color a versão do CTI na pagina inicial
+    Criar uma atalho que seja configurável para ver algumas informações, como por exemplo o overview do CTI. Seria como as notificações, vc clica e abre uma aba com as informações.
+    Reduzir o tamanho das fontes dos input e do componentes REPORT (ver as resoluções e aplicações).
+    Deixar o header do top menu como na ideia inicial, com o submódulo abaixo do módulo no título
+    Quando estiver em uma tela que pode fazer o refresh de dados, também deixar o refresh automático a cada 10 min
+
+CTI Tool
+    Quando implementar os tier no banco, sempre que for escolhido Application Bug só deverão retornar os tiers que tiverem PBI
+    Quando for relacionado um novo pbi, atualizar a base inserindo o novo pbi nas resoluções e alterar a classificação para application bug
+    Rever os modais de delete e leave page.
+    Rever o nome CTI Tool (Categorization Tier Information)
+    COlunas ciustomizadas no search do CTI
+    Colocar uma tela com as definições dos breah reasons (será a de edição também)
+    Colocar uma tela com as definições das classificações (será a de edição também)
+
+    Dashboard
+        Um dashboard com um resumo de resolções de hoje, essa semana, esse mês.
+
+    Tier Tree Management
+        Colocar a qunatidade de PBI e KBA por país no status
+        Atrelar fila de support ao tier 1
+        Analistas solicitam a criação de um novo tier
+
+Application CATALOG 
+        quando a aplicação for passada para o estado de decommissionada, precisa preencher por qual foi substituída
+        quando a aplicação deixar de ser suportada pela wipro, precisa preencher quem é o novo supplyer
+
+SLA Time
+    Adicionar a descrição para tempo de resposta, resolução e target
+    Adicionar a matrix de prioridade
+    Adicionar as descrições de impacto e urgência
+
+Interface
+    Ajustar o grid do listItem. Separar o icone em uma flex box e o texo em um grid para manter sempre a mesma distância das linhas.
+    Padronizar as telas de busca (RESOLUTION SEARCH, APPLICATION CATALOG, MANAGE TEAM)
+
+Snackbar
+    Permitir que o snack bar mostre multiplas notificações
+    No AppSnackbar, criar os componentes com base em um ID. Assim, poderão haver multiplos snackbars
+        Quando implementar o ID, remover o snackbar do FormView e utilizar o AppSnackbar
+
+Settings
+    Colocar uma opção para limpar as configurações salvas no localStorage
+    Vereficar como estão sendo buscados os dado da lista de requests e como o search dela está funcionando
+    Padronizar os componentes request / pending requests / allowed accesses
+    quando for clicado para fazer o refresh, o botão deve ficar em um estado de atualização até terminar, a invés de deixar escrito loading... na tela
+    Em accountable change, quando pedir a mudança deverá ser mostrado quais serão todos os novos accountables
+    Implementar o AWAY Mode
+    Se o primeiro accountable não estiver disponível (away mode) o segundo deverá ser notificado
+    Ao solicitar acesso a um suport group, verificar as solicitações pendentes para mostrar o aviso de cancelamento de request
+
+    GENERAL
+        Tempo de visibilidade das notificações
+        Posição do snackbar
+        Tempo de refresh do usuário
+
+useForm hook
+    Rever a necessidade desse hook.
+
+Team Manager
+    ???QUando fizer isso, refazer as query do TeamStats para incluri todos os accountables
+
+    Manage Team
+        Melhorar as informações do usuário na lista dos membros do time (colocar o role e outras informações)
+
+    Team requests
+        A foto de avatar está sem a cor pq não fica salva junto com a solicitação.
+
+User
+    Colocar em profile qual país o usuário pertence (e em team stats -> overview, a quantidade de user por país)
+    Quando colocar a localização do usuário, mudar a data de expiração do código de recuperação de senha no email
+    Colocar o horário de trabalho
+    Colocar foto de perfil
+    COlocar email de contato opcional
+    Icone de copiar ao lado das informações de profile
+
+Social
+    Precisa criar um módulo disponível a todos para que possam ver informações sobre todos os usuários, assim pdoem pegar o contato e ver que é o gestor
+    Interessante também ver a estrutura dos times
+
+DEV 
+    Search para todas as coleções
+    Inserir patch
+    Lançar notificação (patch e bug report)
+    TEla para ver o que foi enviado pelo help
+    REset de senha do usuário
+    Tela para gerenciar so backlogs
+
+Help
+    GUia em PDF para download
+    contato de suporte
+    FAQ 
+    Reportar bug
+    Enviar sugestões
+
+???
+    UMa tela assim como a de notificações para ver o status da equipe (quem está online, com solicitações pendentes e outras informações)
+
+
+===================== Server =======================
+
+user-controllers
+    updateStatus => rever toda a função. Terá erro ao pegar o accountable e a request
+
+logger
+    Transofrmar o logger em um objeto global (ou uma static class) e anotar todos os erros lá, não apenas os do task manager
+
+Model
+    Colocar um metodo update para atualizar as informações da classe com as do banco
+
+User
+    Construí-la em cima de Model
+
+getFilters
+    Padronizar os endpoints com um controlador para a lógica dos filtros
+
+Resolution
+    Criar uma propriedade para gravar a ordem dos campos. Ela pode ser utilizada para guardar a validação de cada campo.
+
+=============================================================================
+
+    VOCÊ ESTA AQUI \/\/\/\/\/\/\/\/\/
+
+    Add accountable (gera solicitação)
+        O usuário pode solicitar a um gestor para ser do seu time (sem restrições nesse caso, apenas seguir a hierarquia)
+        Verificar se o novo accountable já não é accountable de algum accountable em solicitação. Isso pq caso o accountable menor aceitar, o maior també já será accountable
+            Cancelar a solicitação caso o usuário aceite prosseguir.
+
+    Remove accountable (gera solicitação)
+        O usuário pode solicitar a remoção de um accountable. O accountable deverá aprovar.
+        O usuário irá perder todos os acessos que são de controle desse accountable.
+        Pode pedir se tiver uma troca, mas a troca será cancelada
+        Só é possivel remover um accountable primario
+        Precisa avaliar se ele ainda terá algum direct accountable com o mesmo role. 
+            Se ele não tiver, os novos accountables deverão ser notificados de que serão agora direct accountables desse usuário.
+
+    Change accountable (gera solicitação)
+        O usuário pode solocitar a troca de um accountable primario por outro com o mesmo role. Se não tiver outro possivel a opção não deve aparecer
+            Os dois accoutnables devem approvar a solicitação, e todos os acessos que são de controle do antigo accountable serão perdidos.
+
+
+
+    Add team member
+        O accountable pode adicionar qualquer usuário do seu time global, abaixo da sua hierarquia e que ainda não faça parte do seu time para ser um membro (sem restrições)
+        Uma notificações para o grupo do time deverá ser emitida avisando de um novo integrante.
+        Notificações para todos os direct accountables do user e para os accountables com o mesmo role do novo accountable devem ser emitidas avisando que ele possuí um novo accountable.
+
+    ====> Remove team member (***gera solicitação)
+        O accountable pode remover um membro de seu time. O usuário perderá todos os acesso de controle direto desse accountable.
+            Se houver outro accountable com o mesmo role, ele apenas deve ser notificado.
+            Se não houver accountable com o mesmo role, irá gerar uma solicitação para os novos direct accountables do usuário. Eles precisam aprovar essa remoção.
+            A remoção do member deve ser avisada no grupo de notificações do time
+
+    Change team member (gera solicitação)
+        O accountable pode solicitar a sua substituição como accountable de um usuário por outro accountable com seu role ou maior.
+        A solicitação deve ser aprovada pelo novo accountable. O usuário perderá todos os acesso de controle direto do antigo accountable. 
+
+
+    REGRAS GERAIS
+        Tanto na mudança quanto na remoção de accountable, deverão ser revistos os acessos do usuário para ver quais deverão ser removidos.
+        Notificações sempre devem ser emitidas sobre as mudanças
+
+
+
+    TIERS MANAGEMENT
+    
+    Criação
+        Não se pode criar um tier isolado. Deve-se criar uma combinação de tiers, e dentro dela inserir os novos tiers.
+        Podem ser selecionados múltiplos países durante a criação. Do tier 1 ao tier 3 só se pode selecionar/criar um tier. O tier 4 também podem ser vários.
+        O tier 1 deve ser acssociado a uma fila de suporte.
+        Para cada tier, deve-se ou selecionar um tier já existente, ou criar um.
+        Os tiers devem estar sempre associados com um level. Assim, uma string utilizada como tier 1, não pode aparecer em outros tiers. Isso só irá acontecer quando for criado por exemplo um tier 2 com o mesmo nome de um tier 1. Nesse caso, uma memsagem irá aparecer informando que esse tier é utilizado como tier 1, e então será adicionado um novo level na configuração do tier, permitindo ser utilizado tando como 2 quanto como 1.
+
+        Country
+            Podem ser selecionados vários países, ou criado novos.
+
+        Tier 1
+            Quando for selecionado um tier 1 que não está acossiado a nenhuma fila de suporte do usuário, ele precisará escolher qual de suas filas quer atrela-lo.
+
+
+    Quais tier podem ser intercambiáveis?
+
+        
+
+        QUANDO SE CLICAR PARA LIMPAR OS FILTROS, A PRIMEIRA VEZ ELE NÃO LIMPA, SÓ A PARTIR DA SEGUNDA
+
+        NO ZOOM, O CENTRO DO TRANSFORM PRECISA SER A POSIÇÃO DO MOUSE
+
+        MUDAR A DESCRIÇÃO DO SERVIDOR NO CMDB
+
+        ARRUMAR O SCRITP DE EXECUÇÂO NO SERVIDOR AO INCIAR (TASK SCHEDULER)
+
+        VERIFICAR SE QUANDO VOCê PEDE ACESSO A UM GRUPO DE SUPORTE, O GESTOR ESTÁ PODENDO APROVAR A SOLICITAÇÃO SEM TER ACESSO A TODAS AS APLICAÇÕES
+
+        CRAIR UM ERROR HANDLER PARA LIDAR COM TODOS OS ERROR DO SERVIDOR
+
+        RESET DE SENHA DE ADM PRECISA IR PARA OS ADMS
+        
+        QUANDO É FEITO O REFRESH DOS DADOS NO TEAM ORGANIZATION, O FILTRO PARA DE SER APLICADO (NÃO ENCONTREI O ERRO)
+        
+
+        
+        

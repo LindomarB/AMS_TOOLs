@@ -1,0 +1,34 @@
+.Row {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    width: max-content;
+    min-width: 100%;
+    height: calc(1rem + 40px);
+    border-bottom: 1px solid lightgrey;
+    padding: 0 20px;
+    list-style: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+}
+
+.Row:hover {
+    background-color: #f4f4f4;
+}
+
+.Row:hover .cell {
+    color: inherit;
+}
+
+.cell {
+    flex-shrink: 0;
+    display: inline-block;
+    color: var(--secondaryTextColor);
+    /* font-size: 0.875rem; */
+    min-width: 60px;
+    margin-right: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

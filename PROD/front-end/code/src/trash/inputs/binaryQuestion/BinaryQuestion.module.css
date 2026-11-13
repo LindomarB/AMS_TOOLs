@@ -1,0 +1,14 @@
+.BinaryQuestion.labelOnLeft label:first-child {
+    margin-right: 40px;
+    margin-bottom: 0;
+}
+
+.labelOptionsContainerLeft{
+    display: flex;
+    align-items: center;
+}
+
+.optionsInRow {
+    flex-direction: row;
+    align-items: center;
+}

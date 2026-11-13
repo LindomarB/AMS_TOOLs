@@ -1,0 +1,80 @@
+.TopNavbar {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: #06596B;
+    padding: 0.75rem 2rem;
+}
+
+.logo {
+    height: 2rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.header p {
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.title .icon {
+    color: #FFFFFF;
+    font-size: 2rem;
+}
+
+.title p {
+    font-size: 1rem;
+    line-height: 1rem;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+    line-height: 0.75rem;
+}
+
+.button {
+    border: none;
+    border-radius: 8px;
+    width: 2rem;
+    height: 2rem;
+}
+
+.iconNavbar {
+    column-gap: 0.5rem;
+}
+
+.active,
+.active:hover {
+    background-color: rgba(255,255,255, 0.20);
+    opacity: 1;
+}
+
+.rule {
+    opacity: 0.5;
+}
+
+.notifications {
+    color: #FFFFFF;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
+}
+
+.notificationsActive {
+    opacity: 1;
+}
+
+.alert {
+    border: 2px solid #06596B;
+}

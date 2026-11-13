@@ -1,0 +1,23 @@
+.timelineContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    height: 100%;
+}
+
+.hideForm {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-top: 0.5rem;
+}

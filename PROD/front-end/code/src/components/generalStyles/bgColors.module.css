@@ -1,0 +1,67 @@
+.lightGrey {
+    background-color: var(--color-light-grey);
+}
+
+.grey {
+    background-color: var(--color-grey);
+}
+
+.black {
+    background-color: var(--color-black);
+}
+
+.absoluteBlack {
+    background-color: var(--color-absolute-black);
+}
+
+.white {
+    background-color: var(--color-white);
+}
+
+.theme {
+    background-color: var(--color-theme);
+}
+
+.icon {
+    background-color: var(--color-icon);
+}
+
+.red {
+    background-color: var(--color-red);
+}
+
+.green {
+    background-color: var(--color-green);
+}
+
+.blue {
+    background-color: var(--color-blue);
+}
+
+.navyBlue {
+    background-color: var(--color-navy-blue);
+}
+
+.yellow {
+    background-color: var(--color-yellow);
+}
+
+.purple {
+    background-color: var(--color-purple);
+}
+
+.darkBg {
+    background-color: var(--color-dark-bg);
+}
+
+.border {
+    background-color: var(--color-border);
+}
+
+.lightBorder {
+    background-color: var(--color-light-border);
+}
+
+.darkOrange {
+    background-color: var(--color-dark-orange);
+}

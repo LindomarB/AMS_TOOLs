@@ -1,0 +1,56 @@
+.App {
+    position: relative;
+    display: grid;
+    grid-template-columns: [header-start page-start] auto [header-end page-end];
+    grid-template-rows: [header-start] 48px [header-end page-start] minmax(420px, calc(100vh - 48px)) [page-end];
+    width: 100vw;
+    height: 100vh;
+    padding-left: 70px;
+    box-sizing: border-box;
+    transition: padding-left 0.2s ease-out;
+}
+
+/* @media screen and (max-width: 1000px) {
+    .App {
+        grid-template-columns: [navbar-start header-start] 68px [navbar-end page-start] auto [header-end page-end];
+    }
+} */
+
+.appear {
+    opacity: 0;
+}
+
+.appearActive {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.appearDone {
+    opacity: 1;
+}
+
+.enter {
+    opacity: 0;
+}
+
+.enterActive {
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
+
+.enterDone {
+    opacity: 1;
+}
+
+.exit {
+    opacity: 1;
+}
+
+.exitActive {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.exitDone {
+    opacity: 0;
+}

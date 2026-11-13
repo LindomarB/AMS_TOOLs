@@ -1,0 +1,8 @@
+.InProgress {
+    flex-grow: 1;
+}
+
+.list {
+    flex-grow: 1;
+    height: 0;
+}

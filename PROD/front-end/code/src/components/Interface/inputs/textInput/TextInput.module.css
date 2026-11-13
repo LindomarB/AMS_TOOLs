@@ -1,0 +1,14 @@
+.uppercase {
+    text-transform: uppercase;
+}
+
+.button {
+    background-color: transparent;
+    padding-right: 0.5rem;
+    box-sizing: content-box;
+}
+
+.rule {
+    height: calc(100% - 0.5rem);
+    margin-right: 0.5rem;
+}

@@ -1,0 +1,17 @@
+.inputWrapper {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 40px;
+    margin-top: 20px;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+
+.select {
+    min-width: 400px;
+}

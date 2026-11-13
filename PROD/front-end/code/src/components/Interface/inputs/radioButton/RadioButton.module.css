@@ -1,0 +1,75 @@
+.RadioButton {
+    display: block;
+}
+
+.label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    transition: all 0.1s ease-out;
+}
+
+.optionsContainerFlexLayout {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    column-gap: 2rem;
+}
+
+.optionsContainerGridLayout {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-auto-rows: 1fr;
+    row-gap: 0.5rem;
+    column-gap: 2rem;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.option input {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.option label {
+    color: var(--color-grey);
+    font-size: 0.875rem;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+}
+
+.option label.checked {
+    color: var(--color-black);
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.errorMessage {
+    color: rgb(180, 34, 34);
+    font-size: 0.875rem;
+    height: 1rem;
+    margin: 4px 0 0 6px;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-out;
+}
+
+.RadioButton.error .errorMessage {
+    opacity: 1;
+}
+
+.RadioButton.error .label,
+.RadioButton.error .option label {
+    color: rgb(180, 34, 34);
+}

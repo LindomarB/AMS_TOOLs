@@ -1,0 +1,57 @@
+V 1.1.0
+
+AMS Tools
+        Account request
+            Agora as opções de ferramentas vêm acompanhadas de suas descrições.
+        Forgot you password
+            A opção 'Forgot your password' agora está disponível na tela de login.
+            Embora ainda não seja a verão definitiva da função, ela permite por hora solicitar o reset da senha ao seu gestor.
+        Interface
+            Aprimorado o estilo de diversos componentes, tornando a interface mais responsiva a diferentes tipos de tela.
+            Agora ao colocar o mouse sobre o menu lateral, os recursos da ferramenta irão aparecer para facilitar a navegação.
+        Notifications
+            Os ícones das notificações do sistema foram alterados, deixando-as mais inteligíveis.
+
+    CTI Tool
+        Corrigido um problema que criava um campo errado dentro das configurações do usuário ao conceder acesso ao CTI Tool através de uma solicitação.
+        Os campos INCIDENT, PRIORITY, COUNTRY, APPLICATION e SUPPORT GROUP e removidos do texto do Helix.
+
+    Team Manager
+        Account Requests
+            'Account Request' foi removido. As solicitações de conta agora ficam juntas com as solicitações do time.
+            Em um primeiro momento, entendemos que ao solicitar uma conta, o usuário ainda não faz parte do time e por isso a solicitação deveria ficar separada. Fora essa diferença, todas as solicitações seguem os mesmos padrões e mante-las separadas acabou sendo confuso para alguns usuários.
+            Acreditamos que essa alteração irá beneficiar os gestores ao concentrar todas as solicitações em um mesmo lugar, alem de facilitar a manutenção da função.
+        
+        Member Details
+            Corrigido um problema que travava a interface durante o carregamento devido a atrasos na conexão com o servidor.
+            Agora quando o usuário solicitar sua ajuda para resetar sua senha através de 'Forgot your password' na tela de login, a opção 'Reset Password' estará disponível. Através dela você pode gerar um link e envia-lo para o usuário redefinir sua senha. Você também será notificado quando o reset de senha for solicitado.
+            Improve mismatched route messages.
+
+        Team Organization
+            Corrigido um problema que gerava um erro caso os dados dos usuários do CTI Tool não fossem encontrados. Essa situação somente ocorreu devido a um erro que ocorria durante a criação das configuração do usuário caso ele pedisse acesso a ferramenta via solicitação (esse erro também foi corrigido).
+            O usuário selecionado agora fica em destaque.
+
+        Team Requests
+            Agora as solicitações de conta ficam junto com as solicitações do time.
+            As notificações e alertas do gestor agora também são atualizadas ao dar o refresh nas solicitações, melhorando a sincronia da lista de solicitações com a interface do AMS Tools.
+    
+    SLA Time
+        O SLA para a prioridade extended foi corrigido.
+    
+    Settings
+        General
+            Improve mismatched route messages.
+
+        Accountables
+            Corrigido um problema que impedia o refresh das solicitações pendentes ao enviar uma solicitação de adição ou de troca.
+            Ao selecionar um gestor na lista para ver seus detalhes, ele ficará em destaque.
+            O ícone da solicitação 'Accountable Change' foi alterado.
+        
+        CTI Tool
+            Agora ao selecionar uma aplicação para solicitar acesso as suas informações serão exibidas.
+            O nome da solicitação 'CTI Application Permission' foi alterado para 'CTI Application Access'.
+
+        Tools
+            Agora ao selecionar uma ferramenta para acesso a descrição dela será exibida.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------

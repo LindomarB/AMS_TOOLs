@@ -1,0 +1,107 @@
+.Support {
+    row-gap: 2rem;
+}
+
+.banner {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.bannerTitle {
+    margin-bottom: 1rem;
+}
+
+.bannerCard {
+    flex-shrink: 0;
+    border: none;
+    padding: 0;
+}
+
+.bannerContent {
+    align-items: center;
+}
+
+.searchInput {
+    width: 600px;
+}
+
+.toolsHelp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    border: 1px solid var(--color-border);
+    border-top: none;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    padding: 2rem;
+}
+
+.toolButton {
+    color: var(--color-grey);
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.5rem;
+    border: none;
+    opacity: 0.7;
+}
+
+.toolButton:hover {
+    color: var(--color-icon);
+    font-weight: 500;
+    opacity: 1;
+}
+
+.submodulesCard {
+    flex-shrink: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.submodules {
+    display: flex;
+    justify-content: center;
+    column-gap: 4rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.submoduleButton {
+    background-color: transparent;
+    width: 300px;
+    box-shadow: none !important;
+    transition: all 0.15s ease-out !important;
+}
+
+.submoduleButton:hover {
+    background-color: #EAEAEA;
+    box-shadow: none;
+}
+
+.rule {
+    height: auto;
+}
+
+.userGuide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    background-color: #06596B;
+    padding: 2rem;
+}
+
+.userGuide .buttonsContainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.downloadButton {
+    opacity: 1;
+}
+
+.downloadButton:hover > div,
+.downloadButton:hover > span {
+    color: #06596B !important;
+}

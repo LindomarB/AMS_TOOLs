@@ -1,0 +1,14 @@
+.linkText {
+    color: var(--blueTheme);
+    padding: 0;
+}
+
+.linkText:hover,
+.linkText.active {
+    color: var(--iconColor);
+}
+
+.linkText:disabled,
+.linkText:disabled:hover {
+    color: #c4c4c4;
+}

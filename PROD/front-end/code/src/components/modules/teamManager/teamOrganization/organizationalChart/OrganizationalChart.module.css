@@ -1,0 +1,392 @@
+.OrganizationalChart {
+    --connector-color: #C3C3C3;
+
+    position: relative;
+    display: flex;
+}
+
+.card {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4rem 1rem;
+    overflow: auto;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: all 0.1s ease-out;
+}
+
+.teamContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.topContainer {
+    position: relative;
+    display: flex;
+}
+
+.bottomContainer {
+    position: relative;
+    display: flex;
+}
+
+.bottomContainer > div::before,
+.topContainer > div::before,
+.teamContainer .member::before {
+    content: '';
+    position: absolute;
+    display: block;
+    border-top: 1px solid var(--connector-color);
+    width: 100%;
+}
+
+.bottomContainer > div:first-of-type::before,
+.topContainer > div:first-of-type::before,
+.teamContainer .member:first-of-type::before {
+    left: 50%;
+    width: 50%;
+}
+
+.bottomContainer > div:last-of-type::before,
+.topContainer > div:last-of-type::before,
+.teamContainer .member:last-of-type::before {
+    left: 0;
+    width: 50%;
+}
+
+.bottomContainer > div:only-child::before,
+.topContainer > div:only-child::before,
+.teamContainer .member:only-child::after {
+    display: none;
+}
+
+.topContainer > div::after,
+.accountables .teamContainer .bottomContainer > div::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    border-top: 1px solid var(--connector-color);
+    width: 100%;
+    height: 0;
+}
+
+.topContainer > div:first-of-type::after,
+.accountables .teamContainer .bottomContainer > div:first-of-type::after {
+    bottom: 0;
+    left: 50%;
+    width: 50%;
+}
+
+.topContainer > div:last-of-type::after,
+.accountables .teamContainer .bottomContainer > div:last-of-type::after {
+    bottom: 0;
+    left: 0;
+    width: 50%;
+}
+
+.topContainer > div:only-child::after,
+.accountables .teamContainer .bottomContainer > div:only-child::after {
+    display: none;
+}
+
+.accountables > div::before,
+.accountables > div:first-of-type:before, 
+.accountables > div:last-of-type:before,
+.accountables > div:only-child:before {
+    display: none;
+}
+
+.connector {
+    border-left: 1px solid var(--connector-color);
+    width: 0;
+    height: 11rem;
+}
+
+.analystTeam {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-left: 7rem;
+    /* row-gap: 2rem; */
+}
+
+.analystTeam > div::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    border-left: 1px solid var(--connector-color);
+    width: 0;
+    height: 100%;
+}
+
+.analystTeam > div:last-of-type:before {
+    height: 50%;
+}
+
+.analystConnector {
+    align-self: flex-start;
+    margin-left: 7rem;
+}
+
+.analystCorner:before {
+    width: calc(50% - 6.5rem) !important;
+}
+
+.legends {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: -0.5rem;
+    width: calc(100% - 1rem);
+    /* border-top: 1px solid var(--color-border); */
+    margin: 0.5rem;
+    box-sizing: border-box;
+}
+
+.legends > div {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+/*--------------------*/
+
+.noConnectorBefore::before {
+    display: none !important;
+}
+
+.noConnectorAfter::after {
+    display: none;
+}
+
+.team {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+.accountablesNew,
+.members {
+    position: relative;
+    display: flex;
+}
+
+.accountablesNew > div::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    border-top: 1px solid var(--connector-color);
+    width: 100%;
+    height: 0;
+}
+
+.accountablesNew > div:first-of-type::after {
+    left: 50%;
+    width: 50%;
+}
+
+.accountablesNew > div:last-of-type::after {
+    left: 0;
+    width: 50%;
+}
+
+.accountablesNew > div:only-child::after {
+    display: none;
+}
+
+.members > div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    border-top: 1px solid var(--connector-color);
+    width: 100%;
+    height: 0;
+}
+
+.members > div:first-of-type::before {
+    left: 50%;
+    width: 50%;
+}
+
+.members > div:last-of-type::before {
+    left: 0;
+    width: 50%;
+}
+
+.members > div:only-child::before {
+    display: none;
+}
+
+.connectorsContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accountablesMembersConnector {
+    display: block;
+    border-left: 1px solid var(--connector-color);
+    width: 0;
+    height: 4rem;
+}
+
+/* .accountablesMembersConnector > div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    border-top: 1px solid var(--connector-color);
+    width: 100%;
+    height: 0;
+}
+
+.accountablesMembersConnector > div:first-of-type::before {
+    left: 50%;
+    width: 50%;
+}
+
+.accountablesMembersConnector > div:last-of-type::before {
+    left: 0;
+    width: 50%;
+}
+
+.accountablesMembersConnector > div:only-child:before {
+    display: none;
+} */
+
+
+
+/**/
+
+/* .members > div.multipleAccountables::before,
+.members > div.multipleAccountables::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    border-top: 1px solid var(--connector-color);
+    width: 4rem;
+    height: 0;
+} */
+/* 
+.members > div.multipleAccountables::before {
+    left: 0;
+}
+
+.members > div.multipleAccountables::after {
+    right: 0;
+} */
+
+.members > div.multipleAccountables:first-of-type::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    border-top: 1px solid var(--connector-color);
+    width: 4rem;
+    height: 0;
+}
+
+.members > div.multipleAccountables:first-of-type::before {
+    display: none;
+}
+
+.members > div.multipleAccountables:last-of-type::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-top: 1px solid var(--connector-color);
+    width: 4rem;
+    height: 0;
+}
+
+.members > div.multipleAccountables:last-of-type::after {
+    display: none;
+}
+
+.members > div.multipleAccountables:only-of-type::before,
+.members > div.multipleAccountables:only-of-type::after {
+    display: none;
+}
+
+.members > div.multipleAccountables:first-of-type > .accountablesNew > div::before, 
+.members > div.multipleAccountables:last-of-type > .accountablesNew > div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    display: block;
+    border-top: 1px solid var(--connector-color);
+    width: 100%;
+    height: 0;
+}
+
+.members > div.multipleAccountables:first-of-type > .accountablesNew > div:first-of-type:before {
+    left: 50%;
+    width: 50%;
+}
+
+.members > div.multipleAccountables:last-of-type > .accountablesNew > div:last-of-type:before {
+    left: 0;
+    width: 50%;
+}
+
+/* .horConnector.top::before,
+.horConnector.bottom::after {
+    content: '';
+    position: absolute;
+    display: block;
+    border-top: 1px solid var(--connector-color);
+    height: 0;
+}
+
+.top::before {
+    top: 0;
+}
+
+.bottom::after {
+    bottom: 0;
+}
+
+.full::before,
+.full::after {
+    width: 100%;
+}
+
+.left::before,
+.left::after {
+    left: 50%;
+    width: 50%;
+}
+
+.right::before,
+.right::after {
+    left: 0;
+    width: 50%;
+} */

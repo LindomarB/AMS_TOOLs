@@ -1,0 +1,26 @@
+.alert {
+    position: absolute;
+    top: -25%;
+    right: -25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-red);
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.alert * {
+    color: white !important;
+}
+
+.number {
+    text-align: center;
+    line-height: 1rem;
+    width: 1rem;
+    height: 1rem;
+}

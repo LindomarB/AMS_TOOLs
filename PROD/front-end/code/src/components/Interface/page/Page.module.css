@@ -1,0 +1,51 @@
+.Page {
+    grid-column: page;
+    grid-row: page;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    overflow: auto;
+    box-sizing: border-box;
+    /* transition: padding 0.2s ease-out; */
+    z-index: 0;
+}
+
+.doubleContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.leftContainer {
+    flex-shrink: 0;
+    padding: 2rem;
+    z-index: 10;
+    box-shadow: 1px 0px 6px rgba(4, 18, 23, 0.10);
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.rightContainer {
+    position: relative;
+    flex-shrink: 0;
+    flex-grow: 1;
+    background-color: #FFFFFF;
+    padding: 2rem;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+/* @media screen and (max-width: 1280px) {
+    .Page {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Page {
+        padding: 0;
+    }
+} */

@@ -1,0 +1,51 @@
+.tableContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.Table {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    /* margin: 20px;
+    padding: 20px 40px 40px 40px; */
+    transition: margin-right 0.2s ease-out;
+}
+
+.Table.rightMargin {
+    margin-right: 40px;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.tableWindow{
+    flex-grow: 1;
+    display: flex;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    height: 100%;
+    overflow: auto;
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+
+.tableWrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.filterPanel {
+    max-width: 300px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}

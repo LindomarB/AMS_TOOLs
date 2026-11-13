@@ -1,0 +1,52 @@
+.AccountPopBox {
+    width: 300px;
+}
+
+.AccountPopBox .menuItem:last-of-type {
+    border-bottom: none;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    padding: 14px 20px;
+    box-sizing: border-box;
+}
+
+.accountIcon {
+    color: steelblue;
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.userInfo {
+    overflow: hidden;
+}
+
+.userInfo p {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.userInfo p:first-of-type {
+    margin-bottom: 6px;
+}
+
+.userName {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.button {
+    justify-content: flex-start;
+    padding: 14px 20px;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 0;
+    width: 100%;
+}
+
+.button:last-of-type {
+    border-bottom: none;
+}

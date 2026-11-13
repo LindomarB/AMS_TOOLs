@@ -1,0 +1,86 @@
+.CardButton {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding: 0;
+    transition: all 0.2s ease-out;
+    overflow: hidden;
+}
+
+.CardButton.active {
+    border: 2px solid currentColor;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 0.5rem;
+    color: inherit;
+    padding: 1.25rem;
+}
+
+.image {
+   width: calc(100% + 2.5rem);
+   margin: -1.25rem -1.25rem 0;
+   filter: grayscale(0.4);
+   transition: all 0.2s ease-out;
+}
+
+.CardButton:hover .image {
+    filter: grayscale(0);
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    color: inherit;
+}
+
+.iconWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 1.5rem;
+    line-height: normal;
+    transition: all 0.1s ease-out;
+}
+
+.icon.filled {
+    position: absolute;
+    opacity: 0;
+}
+
+.CardButton:hover .icon.outlined,
+.CardButton.active .icon.outlined,
+.CardButton:disabled:hover .icon.filled,
+.icon.active .icon.outlined {
+    opacity: 0;
+}
+
+.CardButton:hover .icon.filled,
+.CardButton.active .icon.filled,
+.CardButton:disabled:hover .icon.outlined,
+.icon.active .icon.filled {
+    opacity: 1;
+}
+
+.textLabel {
+    color: inherit;
+}
+
+.link .button {
+    width: 100%;
+}
+
+.alert {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    pointer-events: none;
+}

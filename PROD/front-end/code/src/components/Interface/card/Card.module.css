@@ -1,0 +1,38 @@
+.Card {
+    display: inline-block;
+    background-color: white;
+    border-radius: var(--border-radius);
+    border: 1px solid #DEDEDE;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.shadow {
+    border: none;
+    box-shadow: 
+        0 -1px 12px rgba(4, 18, 23, 0.05),
+        0 4px 6px rgba(4, 18, 23, 0.10)
+}
+
+.Card.hoverEffect {
+    transition: box-shadow 0.2s ease-out;
+}
+
+.Card.hoverEffect:hover {
+    box-shadow: 
+        0 -1px 12px rgba(4, 18, 23, 0.00),
+        0 10px 16px rgba(4, 18, 23, 0.15)
+}
+
+.panMode {
+    cursor: grab;
+    user-select: none;
+}
+
+.pan {
+    cursor: grabbing;
+}
+
+.panMode * {
+    pointer-events: none;
+}

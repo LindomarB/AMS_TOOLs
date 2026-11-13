@@ -1,0 +1,66 @@
+.popBoxButton {
+    color: var(--color-grey);
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    opacity: 1;
+    padding: 0;
+}
+
+.popBoxButton:hover {
+    color: var(--color-theme);
+    background-color: transparent;
+}
+
+.popBoxButton.red:hover {
+    color: var(--color-red);
+    background-color: transparent;
+}
+
+.popBoxButton.green:hover {
+    color: var(--color-green);
+    background-color: transparent;
+}
+
+.popBoxButton.blue:hover {
+    color: var(--color-blue);
+    background-color: transparent;
+}
+
+.popBox {
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.popBoxButtonIcon {
+    font-size: 1.2rem;
+}
+
+.buttonYes:hover {
+    background-color: #EAEAEA;
+    color: var(--color-green);
+}
+
+.buttonNo:hover {
+    background-color: #EAEAEA;
+    color: var(--color-red);
+}
+
+.popBoxButtonText,
+.question,
+.buttonText {
+    font-size: 0.75rem;
+}
+
+.question {
+    margin: 14px 20px;
+}
+
+.button {
+    justify-content: flex-start;
+    border-top: 1px solid lightgrey;
+    border-radius: 0;
+    width: 100%;
+    padding: 14px 20px;
+}
+

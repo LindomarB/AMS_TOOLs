@@ -1,0 +1,59 @@
+.lightGrey {
+    color: var(--color-light-grey);
+}
+
+.grey {
+    color: var(--color-grey);
+}
+
+.black {
+    color: var(--color-black);
+}
+
+.absoluteBlack {
+    color: var(--color-absolute-black);
+}
+
+.white {
+    color: var(--color-white);
+}
+
+.theme {
+    color: var(--color-theme);
+}
+
+.icon {
+    color: var(--color-icon);
+}
+
+.red {
+    color: var(--color-red);
+}
+
+.green {
+    color: var(--color-green);
+}
+
+.blue {
+    color: var(--color-blue);
+}
+
+.navyBlue {
+    color: var(--color-navy-blue);
+}
+
+.yellow {
+    color: var(--color-yellow);
+}
+
+.orange {
+    color: var(--color-orange);
+}
+
+.darkOrange {
+    color: var(--color-dark-orange);
+}
+
+.purple {
+    color: var(--color-purple);
+}

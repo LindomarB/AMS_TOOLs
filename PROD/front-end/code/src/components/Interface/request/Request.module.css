@@ -1,0 +1,6 @@
+.Request {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 1rem;
+}

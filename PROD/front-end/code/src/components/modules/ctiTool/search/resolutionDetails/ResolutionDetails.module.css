@@ -1,0 +1,12 @@
+.ResolutionDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.header {
+    margin-bottom: 1rem;
+}

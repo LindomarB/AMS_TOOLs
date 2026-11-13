@@ -1,0 +1,67 @@
+.Header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    width: 100%;
+    height: calc(1rem + 40px);
+    /* border-bottom: 2px solid lightgrey; */
+    background-color: steelblue;
+    /* border: 1px solid lightgrey; */
+    /* border-radius: 6px; */
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 0 20px;
+    /* margin-bottom: 10px; */
+    /* list-style: none; */
+    box-sizing: border-box;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.columnName {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+}
+
+.columnLabel {
+    flex-grow: 1;
+    color: white;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.columnLabel.active {
+    font-weight: 600;
+}
+
+.alphaOrderIcon {
+    color: var(--secondaryTextColor);
+    font-size: 1.2rem;
+    padding: 0;
+    margin-left: 6px;
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+}
+
+.columnName:hover .alphaOrder {
+    opacity: 1;
+}
+
+.alphaOrderIcon.active {
+    color: white;
+    opacity: 1;
+}

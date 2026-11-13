@@ -1,0 +1,55 @@
+.List {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.listItem {
+    border-top: 1px solid #EAEAEA;
+    /* border-radius: 12px; */
+    padding: 1rem;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease-out;
+}
+
+.listItem.hover:hover,
+.active {
+    background-color: #EAEAEA;
+    border-top-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.listItem.hover:hover + .listItem,
+.listItem.active + .listItem {
+    border-top-color: #FFFFFF;
+}
+
+.listItem.noBorderRadius.hover:hover,
+.noBorderRadius.active {
+    border-radius: 0;
+}
+
+.listItem:first-of-type {
+    border-top-color: transparent;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* .removeBorder {
+    border-bottom-color: transparent;
+} */
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.reachBottom {
+    height: auto;
+    padding: 1rem 0;
+}

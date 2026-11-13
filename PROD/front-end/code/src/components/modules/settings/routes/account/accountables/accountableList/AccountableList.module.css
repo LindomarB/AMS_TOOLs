@@ -1,0 +1,10 @@
+.list {
+    align-self: stretch;
+    flex-grow: 1;
+    height: 0;
+}
+
+.userResume {
+    flex-grow: 1;
+    overflow: hidden;
+}

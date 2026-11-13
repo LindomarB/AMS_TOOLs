@@ -1,0 +1,77 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.children {
+    position: absolute;
+}
+
+.container:has(
+    .appearActive-right,
+    .enterActive-right,
+    .appearActive-left,
+    .enterActive-left
+) {
+    overflow: hidden;
+}
+
+.appearDone,
+.enterDone,
+.exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Right */
+
+.appear-right,
+.enter-right {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.appearActive-right,
+.enterActive-right,
+.exitActive-right {
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.appearActive-right,
+.enterActive-right  {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.exitActive-right,
+.exitDone-right {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+/*Left*/
+
+.appear-left,
+.enter-left {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.appearActive-left,
+.enterActive-left,
+.exitActive-left {
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+}
+
+.appearActive-left,
+.enterActive-left  {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.exitActive-left,
+.exitDone-left {
+    opacity: 0;
+    transform: translateX(-100%);
+}

@@ -1,0 +1,28 @@
+.Patch {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    height: 100%;
+    overflow: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
+}
+
+.module {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.changes {
+    margin: 0;
+}
+
+.changes li {
+    margin: 0.5rem 0;
+}

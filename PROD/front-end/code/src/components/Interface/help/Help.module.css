@@ -1,0 +1,12 @@
+.Help {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 1rem;
+    max-width: 50vw;
+    overflow: auto;
+}
+
+.title {
+    margin-bottom: 0.5rem;
+}

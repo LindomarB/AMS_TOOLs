@@ -1,0 +1,33 @@
+.SubmenuButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+    font-size: 0.875rem;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 30px;
+    white-space: nowrap;
+    transition: all 0.1s ease-out;
+    box-sizing: border-box;
+}
+
+.SubmenuButton:hover {
+    color: #3c3c3c;
+    font-weight: 600;
+}
+
+.active,
+.active:hover {
+    color: steelblue;
+    background-color: rgba(70, 131, 180, 0.10);
+    font-weight: 600;
+    cursor: default;
+}
+
+.notification {
+    background-color: var(--red);
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}

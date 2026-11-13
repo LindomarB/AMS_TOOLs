@@ -1,0 +1,42 @@
+.Filter {
+    border-bottom: 1px solid var(--color-light-border);
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.reachMax {
+    flex-grow: 1;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.last {
+    border-bottom: none;
+}
+
+.label {
+    flex-shrink: 0;
+    color: var(--color-black);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--color-light-border);
+    transition: height 0.2s ease-out;
+}
+
+.button {
+    margin: 1rem 0;
+}
+
+.buttonText {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

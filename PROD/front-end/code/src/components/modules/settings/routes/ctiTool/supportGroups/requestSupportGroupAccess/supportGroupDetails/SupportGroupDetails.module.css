@@ -1,0 +1,29 @@
+.SupportGroupDetails {
+    border-top: 1px solid var(--color-border);
+    padding-top: 1rem;
+    margin: 1rem 0;
+}
+
+.header {
+    margin-bottom: 1rem;
+}
+
+.applications {
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+.applications p:first-child {
+    margin-bottom: 0.5rem;
+}
+
+.applications li {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.legends {
+    border-top: 1px solid var(--color-border);
+    padding-top: 1rem;
+}

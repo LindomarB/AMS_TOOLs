@@ -1,0 +1,42 @@
+.style {
+    border: none;
+    border-radius: 0;
+    opacity: 1;
+    padding: 0;
+    text-align: center;
+}
+
+.textWrapper {
+    display: inline-block;
+    color: inherit;
+    font-size: inherit;
+}
+
+.text::after {
+    content: attr(label);
+    display: block;
+    height: 0;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+/* .child {
+    color: var(--color-grey);
+} */
+
+.style.highlight,
+.style:hover,
+.style.active,
+.style.active:hover {
+    /* color: currentColor; */
+    font-weight: 600;
+}
+
+.style:disabled,
+.style:disabled:hover {
+    color: var(--color-grey);
+    opacity: 0.5;
+    font-weight: inherit;
+}

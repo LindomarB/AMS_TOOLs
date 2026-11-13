@@ -1,0 +1,18 @@
+.Text {
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    word-break: normal;
+}
+
+.oneLine {
+    white-space: nowrap;
+}

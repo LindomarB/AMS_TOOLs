@@ -1,0 +1,174 @@
+.InputLayout {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: [label-start input-start error-start] 1fr [label-end input-end error-end];
+    grid-template-rows: [label-start] auto [label-end input-start] 1fr [input-end error-start] auto [error-end];
+}
+
+.InputLayout.labelOnLeft {
+    grid-template-columns: [label-start] max-content [label-end input-start error-start] 1fr [input-end error-end];
+    grid-template-rows: [label-start input-start] auto [label-end input-end error-start] auto [error-end];
+    column-gap: 1rem;
+}
+
+.label {
+    grid-column-start: label;
+    grid-row-start: label;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    transition: all 0.1s ease-out;
+}
+
+.disabled .label {
+    color: var(--color-disabled);
+}
+
+.InputLayout.labelOnLeft .label {
+    margin-bottom: 0;
+}
+
+.InputLayout.focus .label {
+    color: var(--color-navy-blue);
+}
+
+.InputLayout.error .label {
+    color: var(--color-red);
+}
+
+.optional {
+    color: var(--color-grey);
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+}
+
+.capsLockOn {
+    color: red;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.inputWrapper {
+    position: relative;
+    grid-column-start: input;
+    grid-row-start: input;
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.inputWrapper.resizable {
+    min-width: 200px;
+    min-height: 50px;
+    resize: both;
+    overflow: hidden;
+}
+
+.icon {
+    margin-left: 1rem;
+}
+
+.disabled .icon {
+    color: var(--color-disabled);
+}
+
+.InputLayout input,
+.InputLayout textarea,
+.InputLayout select {
+    flex-grow: 1;
+    align-self: stretch;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1rem;
+    border: none;
+    resize: none;
+    transition: all 0.1s ease-out;
+}
+
+.InputLayout select {
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+}
+
+.InputLayout input:focus,
+.InputLayout textarea:focus,
+.InputLayout select:focus {
+    outline: none;
+}
+
+.InputLayout input:disabled,
+.InputLayout textarea:disabled,
+.InputLayout select:disabled {
+    cursor: default;
+}
+
+.InputLayout input::placeholder,
+.InputLayout textarea::placeholder {
+    text-transform: none;
+}
+
+.disabled input::placeholder,
+.disabled textarea::placeholder {
+    color: var(--color-disabled);
+}
+
+.InputLayout.focus .inputWrapper {
+    outline: none;
+    border: 1px solid hsla(208, 62%, 41%, 0.7);
+    /* box-shadow: 0 0 10px rgba(39, 108, 168, 0.3); */
+}
+
+.InputLayout.error .inputWrapper {
+    border: 1px solid hsla(0, 82%, 39%, 0.7);
+    /* box-shadow: 0 0 10px rgba(180, 34, 34, 0.3); */
+}
+
+.InputLayout.error .inputWrapper * {
+    color: var(--color-red);
+}
+
+.errorMessage {
+    grid-column-start: error;
+    grid-row-start: error;
+    color: var(--color-red);
+    font-size: 0.75rem;
+    height: 1rem;
+    margin: 0.25rem 0 0 0.5rem;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-out;
+}
+
+.awaitingExternalValidation {
+    color: var(--color-blue);
+    opacity: 1;
+}
+
+
+.InputLayout.error .errorMessage {
+    opacity: 1;
+}
+
+.InputLayout.focus .errorMessage {
+    opacity: 0;
+}
+
+.locked input,
+.locked textarea,
+.locked select,
+.inputWrapper.locked {
+    color: var(--color-black);
+    background-color: #F0F0F0;
+    cursor: default;
+}

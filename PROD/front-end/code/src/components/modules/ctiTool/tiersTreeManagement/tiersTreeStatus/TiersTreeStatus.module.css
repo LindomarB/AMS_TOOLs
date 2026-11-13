@@ -1,0 +1,8 @@
+.TiersTreeStatus {
+    flex-grow: 1;
+}
+
+.reportCard {
+    flex-grow: 1;
+    height: 0;
+}

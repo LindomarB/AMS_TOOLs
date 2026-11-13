@@ -1,0 +1,19 @@
+.incident {
+    display: grid;
+    grid-template-columns: minmax(400px, max-content);
+    grid-auto-rows: 1fr;
+    row-gap: 2rem;
+    align-items: flex-start;
+}
+
+.textArea {
+    min-height: 300px;
+}
+
+.optionsContainer {
+    row-gap: 1rem;
+}
+
+.code {
+    font-family: monospace;
+}

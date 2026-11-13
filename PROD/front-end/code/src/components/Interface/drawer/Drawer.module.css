@@ -1,0 +1,62 @@
+.Drawer {
+    position: relative;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    transition: all 0.2s ease-out;
+    overflow: auto;
+    z-index: 100;
+}
+
+.noOverlap {
+    overflow: hidden;
+    transform: none !important;
+}
+
+.right {
+    top: 0;
+    right: 0;
+    box-shadow: var(--shadow-right);
+    transform: translateX(105%);
+}
+
+.left {
+    box-shadow: var(--shadow-left);
+}
+
+.top {
+    box-shadow: var(--shadow-top);
+}
+
+.bottom {
+    box-shadow: var(--shadow-bottom);
+}
+
+.opened {
+    transform: translate(0);
+}
+
+.noOverlap.opened {
+    overflow: auto;
+}
+
+.noOverlap.closed {
+    padding-left: 0;
+    padding-right: 0;
+    width: 0;
+    min-width: 0;
+}
+
+.renderingPhase {
+    position: absolute;
+    visibility: hidden;
+}
+
+/* .content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+} */

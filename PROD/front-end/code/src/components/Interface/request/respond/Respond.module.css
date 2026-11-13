@@ -1,0 +1,11 @@
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+    margin-top: 1rem;
+    height: 2.625rem;
+}
+
+.buttonsContainer button {
+    flex-grow: 1;
+}

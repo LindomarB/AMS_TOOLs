@@ -1,0 +1,25 @@
+.ul {
+    color: var(--color-black);
+    margin: 0;
+}
+
+.ul li {
+    margin: 0.5rem 0;
+}
+
+.inputsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 1rem 0;
+}
+
+.inputSize {
+    width: 400px;
+}
+
+.warning {
+    align-self: stretch;
+    border: none;
+    border-radius: 0;
+}

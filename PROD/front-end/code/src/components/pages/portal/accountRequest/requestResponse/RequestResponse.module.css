@@ -1,0 +1,40 @@
+.RequestResponse {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.icon {
+    align-self: center;
+    padding: 0.75rem;
+}
+
+.icon div {
+    border-width: 2px;
+}
+
+.iconText {
+    margin-bottom: 1rem;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.refusalReason {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+.refusalReason .header {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}

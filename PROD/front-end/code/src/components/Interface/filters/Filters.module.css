@@ -1,0 +1,22 @@
+.Filters {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    min-width: 400px;
+    height: 100%;
+    padding: 1rem;
+}
+
+.filtersContainer {
+    flex-grow: 1;
+    padding: 0 2rem 1rem 1rem;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.noOverlap {
+    position: relative;
+}

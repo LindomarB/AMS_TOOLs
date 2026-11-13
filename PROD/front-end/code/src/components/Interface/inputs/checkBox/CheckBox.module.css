@@ -1,0 +1,43 @@
+.CheckBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.optionsContainer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.groupLabel {
+    color: var(--color-grey);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.groupLabel label.checked {
+    font-weight: 600;
+}
+
+.labelContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 1.5rem;
+}
+
+.label {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.selectAll input {
+    accent-color: var(--color-dark-orange);
+}
+
+.selectAll label {
+    font-weight: 600 !important;
+}

@@ -1,0 +1,26 @@
+.TeamMembersList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    height: 100%;
+    margin: -2rem;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.inputsContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.filter {
+    flex-grow: 1;
+    min-width: 260px;
+}
+
+.list {
+    flex-grow: 1;
+    height: 0;
+}

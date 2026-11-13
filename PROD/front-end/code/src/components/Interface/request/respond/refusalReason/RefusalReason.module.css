@@ -1,0 +1,8 @@
+.input {
+    min-width: 500px;
+    height: 100px;
+}
+
+.button {
+    align-self: flex-end;
+}

@@ -1,0 +1,18 @@
+.toolInfo {
+    border-top: 1px solid var(--color-border);
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+    align-self: stretch;
+}
+
+.description {
+    margin: 1rem 0
+}
+
+.features {
+    margin: 0.5rem 0 0;
+}
+
+.features li {
+    margin: 0.25rem 0;
+}

@@ -1,0 +1,24 @@
+.YourResolutions {
+    flex-grow: 1;
+}
+
+.tabs {
+    position: absolute;
+    right: calc(100% + 1rem);
+}
+
+.tab {
+    font-size: 0.75rem;
+}
+
+.sectionChildren {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    flex-grow: 1;
+    height: 0;
+    overflow: auto;
+}

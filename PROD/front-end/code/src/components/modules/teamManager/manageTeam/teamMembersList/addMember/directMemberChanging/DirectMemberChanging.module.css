@@ -1,0 +1,61 @@
+
+.DirectMemberChanging {
+    min-height: calc(100vh - 4rem);
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.header {
+    margin-bottom: -1rem;
+}
+
+.conflict {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.conflictHeader {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.conflict .value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease-out;
+}
+
+.conflict .value:hover {
+    background-color: var(--color-hover);
+}
+
+.list {
+    flex-grow: 1;
+    border: none;
+    padding: 0;
+    height: 0;
+}
+
+.listItem,
+.listItem:first-of-type {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    margin: 1rem;
+}
+
+.buttonsContainer {
+    flex-grow: 0;
+}
+
+.password {
+    flex-grow: 1;
+}

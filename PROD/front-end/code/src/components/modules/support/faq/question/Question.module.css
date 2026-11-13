@@ -1,0 +1,26 @@
+.Question {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.questionText {
+    padding: 1rem;
+}
+
+.Question.showAnswer .questionText {
+    font-weight: 600;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.answer {
+    margin: 0 1rem 1rem;
+}

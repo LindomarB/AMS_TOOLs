@@ -1,0 +1,14 @@
+.YourTeam {
+    position: relative;
+    flex-grow: 1;
+}
+
+.reportCard {
+    flex-grow: 1;
+    height: 0;
+}
+
+.tabs {
+    position: absolute;
+    right: 0;
+}

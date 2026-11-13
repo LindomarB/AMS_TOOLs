@@ -1,0 +1,11 @@
+.page {
+    padding: 0;
+}
+
+.table {
+    min-width: 700px;
+}
+
+.filter {
+    max-width: 300px;
+}

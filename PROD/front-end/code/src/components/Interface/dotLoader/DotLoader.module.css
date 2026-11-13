@@ -1,0 +1,82 @@
+.DotLoader {
+    display: flex;
+    animation: loader 1.6s ease-out infinite;
+}
+
+@keyframes loader {
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.dot {
+    border-radius: 100%;
+    opacity: 0;
+    animation: dot1 1.6s ease-out infinite;
+}
+
+.DotLoader .dot:nth-of-type(2) {
+    animation-name: dot2;
+}
+
+.DotLoader .dot:nth-of-type(3) {
+    animation-name: dot3;
+}
+
+@keyframes dot1 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    37.5% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dot2 {
+    0% {
+        opacity: 0;
+    }
+
+    37.5% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dot3 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    62.5% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

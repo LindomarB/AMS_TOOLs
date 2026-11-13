@@ -1,0 +1,29 @@
+.ResolutionProgress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 3rem; 
+    height: 3rem; 
+}
+
+.inside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    box-sizing: border-box;
+}
+
+.inside p {
+    color: var(--color-blue);
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.inside p span {
+    font-size: 0.625rem;
+}

@@ -1,0 +1,25 @@
+.SectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    /* margin-bottom: 30px; */
+    box-sizing: border-box;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: var(--iconColor);
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.title h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+}

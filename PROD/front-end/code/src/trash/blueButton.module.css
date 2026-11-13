@@ -1,0 +1,19 @@
+.blueButton {
+    color: var(--blueTheme);
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    padding: 10px 40px;
+}
+
+.blueButton:hover,
+.blueButton.active {
+    color: white;
+    background-color: var(--blueTheme);
+}
+
+.blueButton:disabled,
+.blueButton:disabled:hover {
+    color: white;
+    background-color: #c4c4c4;
+    border: 1px solid #c4c4c4;
+}

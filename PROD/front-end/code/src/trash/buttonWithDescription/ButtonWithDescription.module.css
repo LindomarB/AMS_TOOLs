@@ -1,0 +1,73 @@
+.ButtonWithDescription {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.1s linear;
+}
+
+.ButtonWithDescription:hover {
+    border-color: currentColor !important;
+    box-shadow: 0 0 1px 1px currentColor;
+}
+
+.ButtonWithDescription a {
+    text-decoration: none;
+}
+
+.title {
+    color: currentColor;
+    display: flex;
+    align-items: center;
+}
+
+.title p {
+    color: currentColor;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0 20px;
+}
+
+.icon {
+    color: currentColor;
+    font-size: 2rem;
+}
+
+.description {
+    color: var(--secondaryTextColor);
+    flex-grow: 1;
+    font-size: 0.875rem;
+    text-align: justify;
+    text-overflow: ellipsis;
+    width: 100%;
+    height: 2.4rem;
+    margin: 0;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.notifications {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(20%, -5px);
+    background-color: #276CA8;
+    color: white;
+    width: 45px;
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.15);
+}
+
+.link {
+    flex-grow: 1;
+}

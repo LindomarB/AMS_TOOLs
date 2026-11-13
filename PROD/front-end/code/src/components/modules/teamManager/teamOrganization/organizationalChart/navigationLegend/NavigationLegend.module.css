@@ -1,0 +1,25 @@
+.NavigationLegend {
+    /* position: absolute; */
+    /* bottom: 0.5rem; */
+    /* right: 0.5rem; */
+    display: flex;
+    /* flex-direction: column; */
+    /* row-gap: 1rem; */
+    column-gap: 2rem;
+    /* border-radius: var(--border-radius); */
+    /* padding: 0.5rem; */
+    /* box-shadow: var(--shadow); */
+    /* z-index: 100 */
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}

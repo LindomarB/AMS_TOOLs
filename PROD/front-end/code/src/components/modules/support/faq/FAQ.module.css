@@ -1,0 +1,70 @@
+.FAQ {
+    row-gap: 0rem;
+    background-color: #FFFFFF;
+    padding: 0;
+}
+
+.banner {
+    border-radius: 0;
+}
+
+.bannerContent {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.bannerContent:after {
+    content: ''
+}
+
+.searchWrapper {
+    position: relative;
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    row-gap: 1rem;
+    width: 800px;
+}
+
+.search {
+    width: 100%;
+}
+
+.button {
+    position: absolute;
+    bottom: -2rem;
+    column-gap: 0;
+}
+
+.button:hover {
+    font-weight: 500;
+}
+
+.page {
+    grid-column: auto;
+    grid-row: auto;
+}
+
+.subjects {
+    padding-right: 2rem;
+}
+
+.activeSubject {
+    color: var(--color-icon);
+    font-weight: 700;
+}
+
+.activeSubject:hover {
+    font-weight: 700;
+}
+
+.questions {
+    flex-shrink: 1;
+}
+
+.subjectName {
+    margin-bottom: 1rem;
+}

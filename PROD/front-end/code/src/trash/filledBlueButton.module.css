@@ -1,0 +1,18 @@
+.filledBlueButton {
+    width: 100%;
+    color: white;
+    background-color: steelblue;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+.filledBlueButton:disabled,
+.filledBlueButton:disabled:hover {
+    color: white;
+    background-color: rgba(70, 131, 180, 0.5);
+}
+
+.filledBlueButton:hover {
+    color: white;
+    background-color: var(--blueTheme);
+}

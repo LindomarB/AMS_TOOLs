@@ -1,0 +1,49 @@
+.appear {
+    opacity: 0;
+}
+
+.appearDone {
+    opacity: 1;
+}
+
+.enter {
+    opacity: 0;
+}
+
+.enterDone {
+    opacity: 1;
+}
+
+.exit {
+    opacity: 1;
+}
+
+.exitDone {
+    opacity: 0;
+}
+
+.appearActive-300 {
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
+.enterActive-300 {
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
+.exitActive-300 {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.appearActive-200 {
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+}
+.enterActive-200 {
+    opacity: 1;
+    transition: opacity 0.2s ease-out;
+}
+.exitActive-200 {
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}

@@ -1,0 +1,16 @@
+.CopyRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.CopyRight small {
+    color: var(--secondaryTextColor);
+    text-align: center;
+}

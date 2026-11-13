@@ -1,0 +1,28 @@
+.banner {
+    background-position: 50% 40%;
+}
+
+.yourResolutions {
+    display: flex;
+    flex-direction: column;
+}
+
+.yourResolutionsHeader {
+    margin-bottom: 0;
+}
+
+.yourResolutionsHeader * {
+    margin: 0;
+}
+
+.yourResolutionsHeader h2 {
+    margin-left: 10px;
+}
+
+.table {
+    height: 600px;
+}
+
+.tableHeader {
+    background-color: #3d2d71;
+}

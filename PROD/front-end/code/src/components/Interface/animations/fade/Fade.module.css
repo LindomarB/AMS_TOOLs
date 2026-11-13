@@ -1,0 +1,32 @@
+.appearActive,
+.enterActive,
+.exitActive {
+    transition: all 0.2s ease-out;
+}
+
+.enter,
+.appear {
+    opacity: 0;
+}
+
+.enterActive,
+.appearActive {
+    opacity: 1;
+}
+
+.enterDone,
+.appearDone {
+    opacity: 1;
+}
+
+.exit {
+    opacity: 1;
+}
+
+.exitActive {
+    opacity: 0;
+}
+
+.exitDone {
+    opacity: 0;
+}

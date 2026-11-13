@@ -1,0 +1,105 @@
+.NavbarButton {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: transparent;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: color 0.2s 0.15s ease-out;
+}
+
+.NavbarButton:hover .label,
+.NavbarButton:hover .icon,
+.forceHover .labe,
+.forceHover .icon {
+    color: grey;
+}
+
+.NavbarButton:hover .iconActive,
+.forceHover .iconActive {
+    color: grey;
+    opacity: 1;
+}
+
+.NavbarButton:hover .iconDefault,
+.forceHover .iconDefault {
+    opacity: 0;
+}
+
+.active .icon,
+.active:hover .iconActive,
+.active:hover .label {
+    color: steelblue;
+}
+
+.iconWrapper {
+    position: relative;
+    margin: 10px 0;
+}
+
+.icon,
+.iconDefault {
+    color: #c3c3c3;
+    transition: all 0.2s ease-out;
+}
+
+.iconActive {
+    position: absolute;
+    left: 0;
+    color: steelblue;
+    opacity: 0;
+    transition: all 0.2s ease-out;
+}
+
+.active .iconActive {
+    opacity: 1;
+}
+
+.active .iconDefault {
+    opacity: 0;
+}
+
+.label {
+    color: #c3c3c3;
+    text-align: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    margin: 0;
+    transition: all 0.2s ease-out;
+}
+
+.active .label {
+    color: steelblue;
+    font-weight: 600;
+}
+
+.notification,
+.notification::before {
+    position: absolute;
+    top: 5%;
+    right: 20%;
+    background-color: var(--red);
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.notification::before {
+    content: '';
+    display: inline-block;
+    top: 0;
+    right: 0;
+    animation: notify 0.5s 1s ease-out forwards;
+}
+
+@keyframes notify {
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}

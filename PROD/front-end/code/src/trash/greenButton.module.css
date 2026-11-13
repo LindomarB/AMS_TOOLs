@@ -1,0 +1,23 @@
+.style {
+    color: var(--green);
+    border: 1px solid currentColor;
+    border-radius: 12px;
+    padding: 0.5rem 2rem;
+    opacity: 0.5;
+}
+
+.style:hover,
+.style.active {
+    color: white;
+    background-color: var(--green);
+    /* color: var(--green); */
+    opacity: 1;
+}
+
+.style:disabled,
+.style:disabled:hover {
+    color: white;
+    background-color: #c4c4c4;
+    border: 1px solid #c4c4c4;
+    opacity: 0.5;
+}

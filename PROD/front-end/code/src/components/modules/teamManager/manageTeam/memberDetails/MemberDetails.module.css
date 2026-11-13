@@ -1,0 +1,9 @@
+.settingContainer {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+}
+
+.stats {
+    height: 100%;
+}

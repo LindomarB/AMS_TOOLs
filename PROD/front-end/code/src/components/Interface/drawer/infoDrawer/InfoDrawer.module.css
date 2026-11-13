@@ -1,0 +1,20 @@
+.InfoDrawer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 1rem;
+    width: 30vw;
+    min-width: 400px;
+    height: 100%;
+    padding: 1rem;
+    z-index: 100;
+}
+
+.closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}

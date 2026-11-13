@@ -1,0 +1,17 @@
+.Legend {
+    /* position: absolute; */
+    /* bottom: 0.5rem; */
+    /* left: 0.5rem; */
+    display: flex;
+    column-gap: 2rem;
+    /* border-radius: var(--border-radius); */
+    /* padding: 0.5rem; */
+    /* box-shadow: var(--shadow); */
+    /* z-index: 100 */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}

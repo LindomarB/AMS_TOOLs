@@ -1,0 +1,8 @@
+.ApplicationCatalog {
+    position: relative;
+    overflow: hidden;
+}
+
+.rightContainer {
+    flex-shrink: 1;
+}

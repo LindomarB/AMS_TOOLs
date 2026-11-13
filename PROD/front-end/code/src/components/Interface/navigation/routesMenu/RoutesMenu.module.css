@@ -1,0 +1,16 @@
+.RoutesMenu {
+    min-width: 200px;
+    height: 100%;
+    overflow: auto;
+}
+
+.button:hover {
+    color: var(--color-theme);
+    font-weight: 600;
+}
+
+.active,
+.active:hover {
+    color: var(--color-theme);
+    font-weight: 700;
+}

@@ -1,0 +1,16 @@
+.Application {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0 1rem;
+}
+
+.name {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.name span:last-of-type {
+    margin-left: 0.5rem;
+}

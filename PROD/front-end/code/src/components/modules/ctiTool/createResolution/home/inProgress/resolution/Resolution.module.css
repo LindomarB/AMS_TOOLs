@@ -1,0 +1,9 @@
+.text {
+    display: flex;
+    align-items: baseline;
+}
+
+.text span {
+    letter-spacing: 0.5px;
+    width: 100%;
+}

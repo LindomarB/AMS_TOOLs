@@ -1,0 +1,43 @@
+.Search {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid lightgrey;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.inputWrapper span {
+    color: rgb(158, 158, 158);
+    margin-right: 10px;
+}
+
+.inputWrapper input {
+    flex-grow: 1;
+    font-size: 1rem;
+    width: 100%;
+    border: none;
+}
+
+.inputWrapper input:focus {
+    outline: none;
+}
+
+.cleanButton {
+    color: rgb(158, 158, 158);
+    transition: opacity 0.1s ease-out;
+}
+
+.cleanButton:hover {
+    color: inherit;
+}
+
+.cleanButton:disabled {
+    opacity: 0;
+}

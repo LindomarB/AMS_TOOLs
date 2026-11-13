@@ -1,0 +1,22 @@
+.sectionsContainer {
+    flex-grow: 1;
+    display: flex;
+    column-gap: 2rem;
+    overflow: hidden;
+    margin: -1rem;
+    padding: 1rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 350px;
+    overflow: auto;
+    margin: -1rem;
+    padding: 1rem;
+}
+
+.menuButton {
+    flex-shrink: 0;
+}

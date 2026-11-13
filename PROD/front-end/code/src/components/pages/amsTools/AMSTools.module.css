@@ -1,0 +1,49 @@
+.AMSTools {
+    position: relative;
+    display: grid;
+    grid-template-columns: [side-navbar-start] 3rem [side-navbar-end top-navbar-start page-start] minmax(600px, 1fr) [top-navbar-end page-end];
+    grid-template-rows: [side-navbar-start top-navbar-start] auto [top-navbar-end page-start] minmax(420px, 1fr) [side-navbar-end page-end];
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.appear {
+    opacity: 0;
+}
+
+.appearActive {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.appearDone {
+    opacity: 1;
+}
+
+.enter {
+    opacity: 0;
+}
+
+.enterActive {
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+}
+
+.enterDone {
+    opacity: 1;
+}
+
+.exit {
+    opacity: 1;
+}
+
+.exitActive {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.exitDone {
+    opacity: 0;
+}

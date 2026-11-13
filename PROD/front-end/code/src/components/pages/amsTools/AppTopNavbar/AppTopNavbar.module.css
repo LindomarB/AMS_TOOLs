@@ -1,0 +1,5 @@
+.AppTopNavbar {
+    grid-column: top-navbar;
+    grid-row: top-navbar;
+    z-index: 20;
+}

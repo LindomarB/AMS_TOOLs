@@ -1,0 +1,80 @@
+.PopBox {
+    position: absolute;
+    background-color: white;
+    /* min-width: 60px;
+    min-height: calc(1rem + 40px); */
+    margin: 0;
+    padding: 0;
+    border: 1px solid #DEDEDE;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    transform: scale(0);
+    transition: 
+        transform 1s ease-out, 
+        opacity 0.1s ease-out;
+    box-sizing: border-box;
+    z-index: 60;
+    overflow: auto;
+    animation: show 0.3s ease-out forwards;
+}
+
+.PopBox.hide {
+    animation: hide 0.3s ease-out forwards;
+}
+
+.PopBox.disableAnimation,
+.PopBox.hide.disableAnimation {
+    animation-duration: 0s;
+}
+
+.top-left {
+    left: 0;
+    /* bottom: calc(100% + 4px); */
+    transform-origin: bottom left;
+}
+
+.bottom-left {
+    /* left: 0; */
+    top: calc(100% + 4px);
+    transform-origin: top left;
+}
+
+.top-right {
+    right: 0;
+    /* bottom: calc(100% + 4px); */
+    transform-origin: bottom right;
+}
+
+.bottom-right {
+    /* right: 0; */
+    top: calc(100% + 4px);
+    transform-origin: top right;
+}
+
+@keyframes show {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

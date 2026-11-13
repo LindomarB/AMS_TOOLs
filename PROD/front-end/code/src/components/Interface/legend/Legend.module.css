@@ -1,0 +1,10 @@
+.Legend {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}

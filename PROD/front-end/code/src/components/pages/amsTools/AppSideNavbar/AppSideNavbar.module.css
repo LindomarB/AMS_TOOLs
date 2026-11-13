@@ -1,0 +1,5 @@
+.AppSideNavbar {
+    grid-column: side-navbar;
+    grid-row: side-navbar;
+    z-index: 30;
+}

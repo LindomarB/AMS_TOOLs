@@ -1,0 +1,66 @@
+.label {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+.input {
+    display: none;
+}
+
+.filesContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    padding-bottom: 0.5rem;
+    overflow: auto;
+}
+
+.file {
+    flex-shrink: 0;
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.fileIcon {
+    flex-grow: 1;
+}
+
+.fileName {
+    background-color: #00000099;
+    padding: 0.5rem;
+    /* border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius); */
+}
+
+.preview {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    border: 1px solid var(--color-light-grey);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: box-shadow 0.15s ease-out;
+}
+
+.preview:hover {
+    box-shadow: var(--shadow), 0px 12px 12px rgba(4, 18, 23, 0.15);
+}
+
+.removeButton {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border-radius: var(--border-radius);
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    opacity: 0;
+}
+
+.preview:hover .removeButton {
+    opacity: 1;
+}

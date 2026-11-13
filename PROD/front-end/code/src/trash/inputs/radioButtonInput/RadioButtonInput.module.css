@@ -1,0 +1,68 @@
+.RadioButtonInput {
+    display: block;
+}
+
+.label {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    transition: all 0.1s ease-out;
+}
+
+.optionsContainerFlexLayout {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: 40px;
+}
+
+.optionsContainerGridLayout {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-auto-rows: 1fr;
+    row-gap: 10px;
+    column-gap: 40px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+}
+
+.option input {
+    cursor: pointer;
+}
+
+.option label {
+    font-size: 0.875rem;
+    margin-left: 4px;
+    box-sizing: border-box;
+    transition: all 0.1s ease-out;
+    cursor: pointer;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.errorMessage {
+    color: rgb(180, 34, 34);
+    font-size: 0.875rem;
+    height: 1rem;
+    margin: 4px 0 0 6px;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-out;
+}
+
+.RadioButtonInput.error .errorMessage {
+    opacity: 1;
+}
+
+.RadioButtonInput.error .label,
+.RadioButtonInput.error .option label {
+    color: rgb(180, 34, 34);
+}

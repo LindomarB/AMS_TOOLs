@@ -1,0 +1,30 @@
+.Header {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    width: 100%;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    text-transform: capitalize;
+}
+
+.rule {
+    border-bottom: 1px solid var(--color-light-border);
+    padding-bottom: 0.5rem;
+}
+
+.strong {
+    border-color: var(--color-border);
+}
+
+.children {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    height: 100%;
+    margin-left: auto;
+}

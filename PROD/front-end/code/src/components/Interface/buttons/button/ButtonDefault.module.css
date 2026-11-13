@@ -1,0 +1,54 @@
+.style {
+    border: 1px solid currentColor;
+    border-radius: 12px;
+    padding: 0.5rem 2rem;
+    opacity: 0.7;
+}
+
+.style:hover,
+.style.active {
+    background-color: currentColor;
+    opacity: 1;
+}
+
+.style.highlight .child,
+.style:hover .child,
+.style.active .child {
+    color: #FFFFFF;
+}
+
+.style:disabled,
+.style:disabled:hover,
+.style.highlight:disabled,
+.style.highlight:disabled:hover  {
+    background-color: var(--color-disabled);
+    border-color: var(--color-disabled);
+    opacity: 0.4;
+}
+
+.style:disabled .child,
+.style:disabled:hover .child {
+    color: #FFFFFF;
+}
+
+.style.highlight {
+    background-color: currentColor;
+    border-color: currentColor;
+}
+
+.style.highlightDisabled:disabled,
+.style.highlightDisabled:disabled:hover {
+    background-color: currentColor;
+    border-color: currentColor;
+}
+
+.iconOnly {
+    border-radius: 50%;
+    padding: calc(0.25rem - 1px);
+    /* width: 1.5rem;
+    height: 1.5rem; */
+}
+
+.iconOnly .icon {
+    font-size: 1rem;
+}

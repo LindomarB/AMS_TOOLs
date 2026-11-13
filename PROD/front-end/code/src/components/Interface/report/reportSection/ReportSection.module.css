@@ -1,0 +1,12 @@
+.ReportSection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    border-bottom: 1px solid lightgrey;
+    padding: 20px;
+}
+
+.title {
+    font-size: 1.25rem;
+    margin: 0 0 10px 0;
+}

@@ -1,0 +1,16 @@
+.Application {
+    display: flex;
+    align-items: baseline;
+}
+
+.Application > span {
+    width: 100%;
+}
+
+.decommissioned {
+    margin-left: 2rem;
+}
+
+.hide {
+    visibility: hidden;
+}

@@ -1,0 +1,40 @@
+.ApplicationList {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: -2rem;
+    padding: 2rem 0;
+    width: 30vw;
+    min-width: 24rem;
+}
+
+.header {
+    margin: 0 2rem;
+    width: auto;
+}
+
+.rule {
+    background-color: #C3C3C3;
+}
+
+.inputsContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    border-bottom: 1px solid var(--color-border);
+    padding: 2rem;
+}
+
+.search {
+    flex-grow: 1;
+}
+
+.list {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    height: 0;
+}

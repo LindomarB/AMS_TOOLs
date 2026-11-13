@@ -1,0 +1,100 @@
+.InputField {
+    display: grid;
+    grid-template-columns: [label-start input-start error-start] 1fr [label-end input-end error-end];
+    grid-template-rows: [label-start] auto [label-end input-start] 1fr [input-end error-start] auto [error-end];
+}
+
+.InputField.labelOnLeft {
+    grid-template-columns: [label-start] max-content [label-end input-start error-start] 1fr [input-end error-end];
+    grid-template-rows: [label-start input-start] auto [label-end input-end error-start] auto [error-end];
+}
+
+.label {
+    grid-column-start: label;
+    grid-row-start: label;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin: 6px 10px 6px 0;
+    transition: all 0.1s ease-out;
+    font-weight: 500;
+}
+
+.InputField.focus label {
+    color: var(--blueTheme);
+}
+
+.InputField.error .label {
+    color: #b42222;
+}
+
+.optional {
+    color: inherit;
+    font-size: 0.875rem;
+}
+
+.input {
+    grid-column-start: input;
+    grid-row-start: input;
+    background-color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 10px;
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    resize: none;
+    transition: all 0.1s ease-out;
+}
+
+.input:focus {
+    outline: none;
+    border: 1px solid var(--blueTheme);
+    box-shadow: 0 0 10px rgba(39, 108, 168, 0.3);
+}
+
+.input.disableHighlight:focus {
+    outline: none;
+    border: 1px solid lightgrey;
+    box-shadow: none;
+}
+
+input::placeholder {
+    text-transform: none;
+}
+
+.InputField.error .input {
+    /* background-color: hsl(0, 68%, 90%); */
+    color: #b42222;
+    border: 1px solid rgb(180, 34, 34);
+    box-shadow: 0 0 10px rgba(180, 34, 34, 0.3);
+}
+
+.input.valid {
+    /* background-color: hsl(120, 57%, 90%); */
+    border: 1px solid rgb(43, 158, 43);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.errorMessage {
+    grid-column-start: error;
+    grid-row-start: error;
+    color: rgb(180, 34, 34);
+    font-size: 0.875rem;
+    height: 1rem;
+    margin: 4px 0 0 6px;
+    opacity: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-out;
+}
+
+.InputField.error .errorMessage {
+    opacity: 1;
+}
+
+.InputField.focus .errorMessage {
+    opacity: 0;
+}

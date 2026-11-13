@@ -1,0 +1,57 @@
+.IconRevealButton {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.IconRevealButton:hover {
+    color: var(--blueTheme);
+}
+
+.IconRevealButton:disabled {
+    color: var(--secondaryTextColor);
+}
+
+.IconRevealButton p {
+    color: inherit;
+    margin: 0;
+}
+
+.IconRevealButton.left p{
+    margin-left: 1rem;
+}
+
+.IconRevealButton.right p{
+    margin-right: 1rem;
+}
+
+.icon {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: 
+        transform 0.3s ease-out,
+        opacity 0.1s ease-out;
+}
+
+.icon * {
+    color: inherit;
+    width: 1.4rem;
+    font-size: 1.4rem;
+}
+
+.IconRevealButton.left .icon {
+    transform: translateX(100%);
+}
+
+.IconRevealButton.right .icon {
+    transform: translateX(-100%);
+}
+
+.IconRevealButton:enabled:hover .icon {
+    transform: translateX(0%);
+    opacity: 1;
+}
+

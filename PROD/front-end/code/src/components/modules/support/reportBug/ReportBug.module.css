@@ -1,0 +1,17 @@
+.label {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: -1.5rem;
+}
+
+.textArea {
+    flex-grow: 1;
+}
+
+.button {
+    align-self: flex-end;
+}
+
+/* .inputLabel {
+    margin: 1rem 0;
+} */

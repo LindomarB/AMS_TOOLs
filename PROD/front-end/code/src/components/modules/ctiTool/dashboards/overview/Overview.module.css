@@ -1,0 +1,28 @@
+.Overview {
+    flex-direction: row;
+    padding: 0
+}
+
+.overviewContainer {
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 2rem;
+}
+
+.buttonsContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    height: 1.5rem;
+}
+
+.rule {
+    background-color: #C3C3C3;
+}
+
+.popBox {
+    padding: 1rem;
+}

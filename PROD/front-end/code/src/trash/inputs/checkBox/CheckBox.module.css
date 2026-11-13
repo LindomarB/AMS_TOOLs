@@ -1,0 +1,40 @@
+.CheckBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.optionsContainer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.option input {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.option input:disabled {
+    cursor: default;
+}
+
+.option label {
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+
+.option label.disabled {
+    color: var(--secondaryTextColor);
+    cursor: default;
+}
+
+.label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,28 @@
+.Note {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.changes {
+    margin: 0;
+}
+
+.changes li {
+    margin: 0.5rem 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.container:last-of-type {
+    margin-bottom: auto;
+}
+
+.submodule {
+    margin-bottom: 0.5rem;
+}

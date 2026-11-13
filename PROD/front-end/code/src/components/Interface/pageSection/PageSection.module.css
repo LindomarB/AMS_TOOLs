@@ -1,0 +1,32 @@
+.PageSection {
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    border-radius: 6px;
+    width: 100%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.withBanner {
+    border: none;
+    padding: 0;
+}
+
+.banner {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.childrenWrapper {
+    padding: 20px 40px;
+    border: 1px solid #d3d3d3;
+    border-top: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.menuContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+ }

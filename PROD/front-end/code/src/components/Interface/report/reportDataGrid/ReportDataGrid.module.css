@@ -1,0 +1,43 @@
+.ReportDataGrid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: baseline;
+}
+
+.dataTitle {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding-right: 3.5rem;
+    white-space: nowrap;
+}
+
+.dataValue {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.dataTitle,
+.dataValue {
+    align-self: flex-start;
+    position: relative;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    transition: background-color 0.15s ease-out;
+}
+
+.row {
+    display: contents;
+}
+
+.row.hoverEffect .dataTitle {
+    padding-left: 0.5rem;
+}
+
+.row.hoverEffect .dataValue {
+    padding-right: 0.5rem;
+}
+
+.row.hoverEffect:hover .dataTitle,
+.row.hoverEffect:hover .dataValue {
+    background-color: var(--color-hover);
+}

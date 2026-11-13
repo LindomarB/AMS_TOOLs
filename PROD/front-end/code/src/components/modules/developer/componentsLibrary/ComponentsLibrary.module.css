@@ -1,0 +1,10 @@
+.ComponentsLibrary {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 32px 120px;
+}
+
+.svg path {
+    fill: red;
+}

@@ -1,0 +1,18 @@
+.ManageTeam {
+    row-gap: 2rem;
+}
+
+.inputsContainer {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.filter {
+    min-width: 260px;
+}
+
+.list {
+    flex-grow: 1;
+    height: 0;
+}

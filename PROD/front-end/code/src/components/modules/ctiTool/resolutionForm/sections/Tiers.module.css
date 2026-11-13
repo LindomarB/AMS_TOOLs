@@ -1,0 +1,22 @@
+.Tiers {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.inputsContainer {
+    flex-grow: 1;
+    display: flex;
+    column-gap: 2rem;
+}
+
+.timeline {
+    flex-grow: 0;
+    width: 50%;
+    min-width: 400px;
+}
+
+.select {
+    flex-grow: 1;
+    min-width: 400px;
+}
